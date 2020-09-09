@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+rng-tools:
+  pkg:
+    name: rng-tools
+  service:
+    name: rng-tools
+  config_file: /etc/default/rng-tools
+  config:
+    device: /dev/urandom
+    options: null

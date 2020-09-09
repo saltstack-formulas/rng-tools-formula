@@ -1,0 +1,9 @@
+name: rng-tools
+os: Debian, Ubuntu, Raspbian, Arch, Manjaro
+os_family: Debian, Arch
+version: 0.1.1
+release: 1
+minimum_version: 2019.2
+summary: rng-tools formula
+description: Formula to install and configure an rng-tools server
+top_level_dir: rng-tools
