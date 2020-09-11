@@ -2,7 +2,7 @@
 # vim: ft=yaml
 ---
 name: share
-title: openntpd formula
+title: rng-tools formula
 maintainer: SaltStack Formulas
 license: Apache-2.0
 summary: shared resources
