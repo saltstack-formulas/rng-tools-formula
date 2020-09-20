@@ -1,7 +1,7 @@
 name: rng-tools
 os: Debian, Ubuntu, Raspbian, Arch, Manjaro
 os_family: Debian, Arch
-version: 0.1.1
+version: 0.2.0
 release: 1
 minimum_version: 2019.2
 summary: rng-tools formula
