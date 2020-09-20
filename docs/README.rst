@@ -95,7 +95,7 @@ e.g. ``debian-9-2019-2-py3``.
 ``bin/kitchen converge``
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creates the docker instance and runs the ``TEMPLATE`` main state, ready for testing.
+Creates the docker instance and runs the ``rng-tools`` main state, ready for testing.
 
 ``bin/kitchen verify``
 ^^^^^^^^^^^^^^^^^^^^^^
