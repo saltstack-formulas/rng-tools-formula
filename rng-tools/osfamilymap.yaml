@@ -17,3 +17,9 @@ RedHat:
 Arch:
   service:
     name: rngd
+
+Gentoo:
+  pkg:
+    name: sys-apps/rng-tools
+  service:
+    name: rngd

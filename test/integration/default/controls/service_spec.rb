@@ -11,7 +11,7 @@ control 'RNG Tools service' do
       'rngd'
     else
       case platform[:name]
-      when 'arch'
+      when 'arch', 'gentoo'
         'rngd'
       end
     end
