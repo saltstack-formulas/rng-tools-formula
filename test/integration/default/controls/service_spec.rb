@@ -19,12 +19,6 @@ control 'RNG Tools service' do
   describe service(service) do
     it { should be_installed }
     it { should be_enabled }
-    if %w[suse].include?(platform[:family])
-      # Unable to run the service in a container due to its
-      # `ConditionVirtualization` setting
-      it { should_not be_running }
-    else
-      it { should be_running }
-    end
+    it { should be_running }
   end
 end
