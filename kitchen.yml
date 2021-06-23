@@ -349,6 +349,8 @@ suites:
     provisioner:
       state_top:
         base:
+          'G@os_family:Gentoo or G@os_family:RedHat or G@os_family:Suse':
+            - states.custom_systemd_service
           '*':
             - rng-tools._mapdata
             - rng-tools
@@ -359,6 +361,10 @@ suites:
               - rng-tools
       pillars_from_files:
         rng-tools.sls: test/salt/pillar/rng-tools.sls
+      dependencies:
+        - name: states
+          path: ./test/salt
+
     verifier:
       inspec_tests:
         - path: test/integration/default
