@@ -8,6 +8,7 @@
       'Fedora': '/usr/lib/systemd/system/rngd.service',
       'Gentoo': '/lib/systemd/system/rngd.service',
       'SUSE':   '/usr/lib/systemd/system/rng-tools.service',
+      'Arch':   '/usr/lib/systemd/system/rngd.service',
     }.get(grains.os, '') %}
 
 test-salt-states-custom-systemd-service-file-replace:
