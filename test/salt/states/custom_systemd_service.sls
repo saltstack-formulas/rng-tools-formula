@@ -5,11 +5,11 @@
 
 {%- set sls_config_file = 'rng-tools.config.file' %}
 {%- set service_file = {
-      'Fedora': '/usr/lib/systemd/system/rngd.service',
+      'RedHat': '/usr/lib/systemd/system/rngd.service',
       'Gentoo': '/lib/systemd/system/rngd.service',
-      'SUSE':   '/usr/lib/systemd/system/rng-tools.service',
+      'Suse':   '/usr/lib/systemd/system/rng-tools.service',
       'Arch':   '/usr/lib/systemd/system/rngd.service',
-    }.get(grains.os, '') %}
+    }.get(grains.os_family, '') %}
 
 test-salt-states-custom-systemd-service-file-replace:
   file.replace:
