@@ -6,7 +6,12 @@ control 'RNG Tools service' do
   service =
     case platform[:family]
     when 'debian'
-      'rng-tools'
+      case system.platform[:finger]
+      when 'ubuntu-22.04'
+        'rngd'
+      else
+        'rng-tools'
+      end
     when 'redhat', 'fedora', 'suse'
       'rngd'
     else

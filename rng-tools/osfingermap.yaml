@@ -10,4 +10,8 @@
 # you will need to provide at least an empty dict in this file, e.g.
 # osfingermap: {}
 ---
-osfingermap: {}
+Ubuntu-22.04:
+  pkg:
+    name: rng-tools5
+  service:
+    name: rngd
